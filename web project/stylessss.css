@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Century Schoolbook", Georgia, serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+html, body {
+    height: 100%; /* Full viewport height */
+    background: url('background.jpg') no-repeat center center/cover; /* Sets background */
+    overflow: auto; /* Allows scrolling if needed */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Century Schoolbook", Georgia, serif;
+}
+
+/* Header Section */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+/* Navbar */
+.navbar ul {
+    display: flex;
+    text-align: center;
+    gap: 30px;
+}
+
+/* Links */
+.navbar ul li a {
+    color: #183a1a;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 10px;
+    transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #fff;
+    background: #284E2B;
+    border-radius: 5px;
+}
+
+/* Contact Info */
+.contact-info {
+    text-align: center;
+    margin-top: 30px; /* Space for header */
+}
+
+/* Contact Form Container */
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Contact Form */
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Limit form width */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contact Info Heading */
+.contact-info h2 {
+    font-size: 80px; /* Increased font size */
+    color: #183a1a;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+/* Label and Input Fields */
+.contact-form label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Email Input Field - Widened */
+.contact-form #email {
+    width: 100%; /* Makes the email input field 100% of the form's width */
+    max-width: 700px; /* Ensures it doesn’t stretch too wide */
+}
+
+/* Textarea */
+.contact-form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #284E2B;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+}
+
+/* Hover Effect for Submit Button */
+.submit-btn:hover {
+    background-color: #1f3c1f;
+    transform: scale(1.05);
+}

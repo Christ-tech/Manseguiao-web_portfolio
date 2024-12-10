@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Century Schoolbook", Georgia, serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+html, body {
+    height: 100%; /* Full viewport height */
+    background: url('background.jpg') no-repeat center center/cover; /* Sets background */
+    overflow: auto; /* Allows scrolling if needed */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Section */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+/* Navbar */
+.navbar ul {
+    display: flex;
+    text-align: center;
+    gap: 30px
+}
+
+/* Links */
+.navbar ul li a {
+    color: #183a1a;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 10px;
+    transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #fff;
+    background: #284E2B;
+    border-radius: 5px;
+} 
+.info h2{
+    font-size: 80px;
+    color: #183a1a;
+    font-style:italic;
+    text-align: center;
+}
+.container {
+    display: flex; /* Arrange boxes side by side */
+    justify-content: center; /* Center horizontally */
+    gap: 100px; /* Space between boxes */
+    margin-top: 100px;
+}
+.box {
+    background-color: #F3F3E0; /* Light gray background */
+    padding: 50px;
+    border-radius: 8px; /* Rounded corners */
+    height: 350px;
+    width: 400px; /* Fixed width */
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+.soft-box:hover {
+    transform: translateY(-10px); /* Slight upward movement */
+    background-color: #508D4E; /* Green for Soft Skills */
+    color: #F3F3E0; /* Black text for better contrast */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+.soft-box:hover h2, 
+.soft-box:hover ul li {
+    color: #F3F3E0; /* Black text */
+}
+.hard-box:hover {
+    transform: translateY(-10px); /* Slight upward movement */
+    background-color: #1A5319; /* Red for Hard Skills */
+    color: #fff; /* White text for better contrast */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+.hard-box:hover h2, 
+.hard-box:hover ul li {
+    color: #fff; /* White text */
+}
+.new-box:hover {
+    transform: translateY(-10px); /* Slight upward movement */
+    background-color: #508D4E; /* Purple for New Skills */
+    color: #fff; /* White text for better contrast */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+.new-box:hover h2, 
+.new-box:hover ul li {
+    color: #fff; /* White text */
+}
+
+/* Box heading */
+.box h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    transition: color 0.3s ease; /* Smooth text color transition */
+}
+/* Custom styles for skill types */
+.soft-skills {
+    color: #508D4E; /* Green for Soft Skills */
+}
+
+.hard-skills {
+    color: #1A5319; /* Red for Hard Skills */
+}
+
+.new-skills {
+    color: #80AF81; /* Purple for New Skills */
+}
+
+/* Unordered list styling inside each box */
+.box ul {
+    list-style-type: style;/* Remove bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+/* List items */
+.box ul li {
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: rgb(15, 40, 25); /* Slightly darker gray */
+    transition: color 0.3s ease; /* Smooth text color transition */
+}
+@media screen and (max-width: 480px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul li a {
+        font-size: 14px; /* Adjust font size for navbar */
+    }
+
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 5%;
+        gap: 15px;
+    }
+
+    .info h2 {
+        font-size: 35px; /* Further reduce heading size */
+    }
+
+}

@@ -1,0 +1,168 @@
+/* Global Reset and Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Century Schoolbook", Georgia, serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+html, body {
+    height: 100%; /* Full viewport height */
+    background: url('background.jpg') no-repeat center center/cover; /* Sets background */
+    overflow: auto; /* Allows scrolling if needed */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Section */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+/* Navbar */
+.navbar ul {
+    display: flex;
+    text-align: center;
+    gap: 30px
+}
+
+/* Links */
+.navbar ul li a {
+    color: #183a1a;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 10px;
+    transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #fff;
+    background: #284E2B;
+    border-radius: 5px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: flex-start; /* Aligns items to the left */
+    align-items: center; /* Centers items vertically */
+    width: 100%;
+    min-height: calc(100vh - 150px); /* Adjusts for header */
+    padding: 15px 10%; /* Adjusts spacing */
+    gap: 80px; /* Adds space between the image and text*/
+}
+.info {
+    flex: 1;
+    margin: 0; /* Default margin */
+    padding: 0; /* Default padding */
+    text-align: left; /* Aligns text to the left by default */
+    position: relative; /* Allows positioning adjustments */
+}
+.info h2{
+    font-size: 80px;
+    color: #183a1a;
+    font-style:italic;
+    text-align: center;
+}
+
+.info h1 {
+    font-size: 50PX;
+    color: #183a1a;
+
+}
+
+.info h3 {
+    font-size: 1.5vw;
+    line-height: 1.5;
+    margin-top: 15px;
+}
+
+.info span {
+    color:#4E2B28;
+}
+
+.info span:hover {
+    color: #284E2B;
+}
+
+.image {
+    flex: 0 0 auto; /* Prevent shrinking or growing */
+    display: flex;
+    align-items: center; /* Align image vertically */
+    justify-content: center; /* Align image horizontally */
+    margin-right: 20px; /* Space between image and info */
+}
+.image img {
+    max-width: 500px; /* Adjust image width */
+    max-height: 400px; /* Adjust image height */
+    border-radius: 5%; /* For a circular image, optional */
+    margin: 0; /* Remove extra space around the image */
+    padding: 0; /* Remove extra padding */
+}
+/* Card Section */
+.card-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    padding: 2px 8%; /* Adjusts padding */
+    position: relative; /* Ensures it stays in place */
+    z-index: 1; /* Makes sure it appears above other elements */
+}
+.card {
+    flex: 1;
+    background: #284E2B;
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card h4 {
+    font-size: 1.5vw;
+    margin-bottom: 10px;
+}
+.card p a {
+    color: white; /* Link color */
+    text-decoration: none; /* No underline */
+}
+
+.card p a:visited {
+    color: inherit; /* Prevent purple color for visited links */
+}
+
+.card p a:hover {
+    color: #284E2B; /* Optional: Link color on hover */
+    text-decoration: none; /* Optional: Underline on hover */
+}
+.card p {
+    font-size: 1vw;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    color: #284E2B;
+    background: #F3F3E0;
+}
+@font-face {
+    font-family: "Century Schoolbook";
+    src: url("fonts/century-schoolbook.ttf") format("truetype");
+}
+
+body {
+    font-family: "Century Schoolbook", Georgia, serif;
+}
+
